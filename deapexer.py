@@ -21,7 +21,6 @@ To extract content of an APEX to the given directory:
 """
 from __future__ import print_function
 import argparse
-import apex_manifest
 import enum
 import os
 import shutil
@@ -231,9 +230,7 @@ def RunInfo(args):
       print(args.apex + ' is not a valid apex')
       sys.exit(1)
     print(res.name)
-  else:
-    manifest = apex_manifest.fromApex(args.apex)
-    print(apex_manifest.toJsonString(manifest))
+
 def RunDecompress(args):
   """RunDecompress takes path to compressed APEX and decompresses it to
   produce the original uncompressed APEX at give output path
