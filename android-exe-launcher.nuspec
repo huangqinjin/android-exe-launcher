@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+    <metadata>
+        <id>android-exe-launcher</id>
+        <version>{api}.{rev}.{version}</version>
+        <authors>huangqinjin</authors>
+        <projectUrl>https://github.com/huangqinjin/android-exe-launcher</projectUrl>
+        <license type="expression">BSL-1.0</license>
+        <title>Android Executable Launcher</title>
+        <description>Launch Android executables from command line</description>
+        <copyright>Copyright © 2022 Huang Qinjin (huangqinjin@gmail.com)</copyright>
+        <readme>README.md</readme>
+        <tags>Android Emulator</tags>
+    </metadata>
+
+    <files>
+        <file src="README.md" />
+        <file src="system/**" />
+        <file src="linkerconfig/**" />
+    </files>
+</package>
